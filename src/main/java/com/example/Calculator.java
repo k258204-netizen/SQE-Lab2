@@ -16,4 +16,9 @@ public class Calculator {
         if (b == 0) throw new ArithmeticException("division by zero");
         return a / b;
     }
+
+   public double multiply(double a, double b) {
+BigDecimal x = BigDecimal.valueOf(a); // correct
+BigDecimal y = BigDecimal.valueOf(b); // correct
+return x.multiply(y).doubleValue(); }
 }
